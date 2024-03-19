@@ -1,0 +1,1 @@
+const headerLink = document.querySelector('.header__menu-nav');
