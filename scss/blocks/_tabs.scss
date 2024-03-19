@@ -1,0 +1,46 @@
+.main__tabs {
+	display: flex;
+	flex-direction: column;
+	row-gap: 40px;
+	margin-bottom: 180px;
+
+	&-title {
+		@include title;
+	}
+
+	& .tabs {
+		display: grid;
+		grid-template-columns: 4fr 8fr;
+		gap: 24px;
+	}
+}
+
+.active {
+		color: var(--dark-color);
+		pointer-events: none;
+	}
+
+
+.tabs__content {
+	display: flex;
+	flex-direction: column;
+	row-gap: 40px;
+
+	& .tabs__content-title {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 40px;
+	}
+	& p {
+		font-family: var(--font-family-l);
+		font-size: 14px;
+		max-width: 484px;
+	}
+	& a {
+		@include link;
+		align-self: flex-end;
+	}
+	&:not(.active) {
+		display: none;
+	}
+}

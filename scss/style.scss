@@ -1,0 +1,19 @@
+//base
+@import "./base/reset";
+@import "./base/vars";
+@import "./base/base";
+@import "./base/mixin";
+@import "./base/fonts";
+@import "./base/buttons";
+@import "./base/video";
+
+//blocks
+@import "./blocks/header";
+@import "./blocks/header-title";
+@import "./blocks/sale-card";
+@import "./blocks/cards.scss";
+@import "./blocks/tabs";
+
+body {
+	color: var(--text-color);
+}

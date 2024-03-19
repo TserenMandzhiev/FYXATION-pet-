@@ -1,0 +1,20 @@
+.main__sale {
+	display: flex;
+	flex-direction: column;
+	row-gap: 40px;
+
+	& .sale__content {
+	display: flex;
+	justify-content: space-between;
+	&-title {
+		@include title;
+	}
+	&-link {
+		@include link;
+		align-self: flex-end;
+	}
+}
+}
+
+
+

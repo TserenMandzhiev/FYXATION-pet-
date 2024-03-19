@@ -1,0 +1,46 @@
+.main__player {
+	display: flex;
+	flex-direction: column;
+
+	&-title {
+		@include title;
+		margin-bottom: 40px;
+	}
+	& .player-container {
+		position: relative;
+		max-width: 1200px;
+		padding-top: 50%;
+		background: url("/images/ico/play.svg") no-repeat center;
+		margin-bottom: 20px;
+		background-size: 15%;
+		&:hover {
+			cursor: pointer;
+		}
+		& iframe {
+			position: absolute;
+			top: 0;
+			right: 0;
+			left: 0;
+			bottom: 0;
+			width: 100%;
+			height: 100%;
+		}
+		& img {
+			position: absolute;
+			top: 0;
+			right: 0;
+			left: 0;
+			bottom: 0;
+			width: 100%;
+			height: 100%;
+			z-index: -1;
+		}
+	}
+	& p {
+		max-width: 384px;
+		font-family: var(--font-family-m);
+		align-self: center;
+		margin-bottom: 180px;
+	}
+}
+

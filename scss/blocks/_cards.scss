@@ -1,0 +1,8 @@
+.main__content-cards {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 24px;
+	margin-bottom: 160px;
+
+	@include card;
+}

@@ -1,0 +1,15 @@
+.tabs__btn {
+	background: transparent;
+	border: none;
+	font-family: var(--font-family-l);
+	font-size: 24px;
+	color: var(--main-gray-color);
+	width: 100%;
+	text-align: left;
+	padding: 30px 0;
+	margin: 0;
+	border-bottom: 1px solid var(--main-gray-color);
+	&:first-child {
+		border-top: 1px solid var(--main-gray-color);
+	}
+}

@@ -1,0 +1,79 @@
+@mixin link {
+
+		font-family: var(--font-family-r);
+		color: var(--dark-color);
+		text-transform: uppercase;
+		font-size: 12px;
+
+    &:hover {
+      color: var(--dark-color);
+			border-bottom: 1px solid var(--dark-color);
+    }
+
+    &:active {
+      color: var(--light-gray-color);
+  	}
+	}
+
+@mixin circle {
+	position: absolute;
+	border-radius: 50%;
+	border: 1px solid var(--main-gray-color);
+	background: transparent;
+	height: 206px;
+	width: 206px;
+	justify-self: center;
+	align-self: center;
+	color: var(--dark-color);
+	font-family: var(--font-family-m);
+	text-transform: uppercase;
+	font-size: 12px;
+}
+
+@mixin card {
+	&-card {
+		display: flex;
+		flex-direction: column;
+		position: relative;
+
+		&-img {
+			margin-bottom: 10px;
+			background: var(--light-gray-color);
+			max-width: 100%;
+		}
+		&-price {
+			display: flex;
+			font-family: var(--font-family-l);
+			color: var(--dark-color);
+			font-size: 14px;
+			justify-content: space-between;
+			margin-bottom: 5px;
+		}
+		&-discount {
+			display: flex;
+			justify-content: space-between;
+			font-family: var(--font-family-l);
+			font-size: 12px;
+			& p:last-child {
+				text-decoration: line-through;
+			}
+		}
+		&::before {
+			content: 'sale';
+			position: absolute;
+			font-family: var(--font-family-l);
+			font-size: 14px;
+			text-transform: uppercase;
+			color: var(--dark-color);
+			left: 10px;
+			top: 10px;
+		}
+	}
+}
+
+
+@mixin title {
+	font-family: var(--font-family-b);
+	color: var(--dark-color);
+	font-size: 36px;
+}

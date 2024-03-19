@@ -1,0 +1,37 @@
+.header__image {
+	position: relative;
+	margin-bottom: 160px;
+		& .header__content {
+		display: grid;
+		grid-template-columns: 8fr 3fr;
+		row-gap: 40px;
+		gap: 24px;
+		margin-bottom: 40px;
+	
+		& h1 {
+			font-family: var(--font-family-b);
+			font-size: 64px;
+			text-transform: uppercase;
+			color: var(--dark-color);
+			letter-spacing: 2%;
+		}
+
+		& p {
+			font-family: var(--font-family-l);
+			font-size: 14px;
+			align-self: flex-end;
+			line-height: 135%;
+			letter-spacing: 2%;
+		}
+	}
+	&-button {
+		display: grid;
+		background: var(--light-gray-color);
+		& .circle-button {
+			@include circle;
+		}
+		& img {
+			justify-self: flex-end;
+		}
+	}
+}

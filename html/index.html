@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>FYXATION</title>
+	<link rel="stylesheet" href="/css/style.min.css">
+</head>
+<body>
+	<header class="header">
+
+		<div class="container">
+			<nav class="header__menu-nav">
+
+				<a href="#" class="header__logo">
+					<img src="/images/ico/logo.svg" class="header__logo-img" alt="FYXATION">
+				</a>
+
+				<ul class="header__menu-list">
+					<li class="header__menu-elements">
+						<a href="#" class="header__menu-link">Bicycles</a>
+					</li>
+					<li class="header__menu-elements">
+						<a href="#" class="header__menu-link">Components</a>
+					</li>
+					<li class="header__menu-elements">
+						<a href="#" class="header__menu-link">Accessories</a>
+					</li>
+				</ul>
+
+				<ul class="header__menu-list">
+					<li class="header__menu-elements">
+						<a href="#" class="header__menu-link">Search</a>
+					</li>
+					<li class="header__menu-elements">
+						<a href="#" class="header__menu-link">Profile</a>
+					</li>
+					<li class="header__menu-elements">
+						<a href="#" class="header__menu-link">Cart</a>
+					</li>
+				</ul>
+
+			</nav>
+		</div>
+		<section class="header__image">
+			<div class="header__content container">
+				<h1>explore the world on two wheels</h1>					<p>We believe that your bicycle can be a work of 	art, a tool in your job, or a way to see the world through a different lens.</p>
+			</div>
+			<div class="header__image-button">
+				<button class="circle-button">
+					Choose a bike
+					<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M11.3536 6.85355C11.5488 6.65829 11.5488 6.34171 11.3536 6.14645L8.17157 2.96447C7.97631 2.7692 7.65973 2.7692 7.46447 2.96447C7.2692 3.15973 7.2692 3.47631 7.46447 3.67157L10.2929 6.5L7.46447 9.32843C7.2692 9.52369 7.2692 9.84027 7.46447 10.0355C7.65973 10.2308 7.97631 10.2308 8.17157 10.0355L11.3536 6.85355ZM1 7H11V6H1V7Z" fill="#121212"/>
+					</svg>
+				</button>
+				<img class="header_image-bike" src="/images/png/header/header-img.png" alt="bike">
+			</div>
+		</section>
+	</header>
+
+	<main class="main">
+		<section class="main__sale container">
+
+			<div class="sale__content">
+				<h2 class="sale__content-title">On sale now</h2>
+				<a href="#" class="sale__content-link">Open now</a>
+			</div>
+
+			<div class="main__content-cards">
+
+				<div class="main__content-cards-card">
+					<div class="main__content-cards-card-img">
+						<a href="#" >
+							<img class="main__content-cards-card-img-link" src="/images/png/bikes/sport-bike.png" alt="">
+							</a>
+					</div>
+					<div class="main__content-cards-card-price">
+						<p>Quever arc</p>
+						<p>$999.00</p>
+					</div>
+					<div class="main__content-cards-card-discount">
+						<p>All road</p>
+						<p>$1099.00</p>
+					</div>
+				</div>
+
+				<div class="main__content-cards-card">
+					<div class="main__content-cards-card-img">
+						<a href="#" >
+							<img class="main__content-cards-card-img-link" src="/images/png/bikes/blue-bike.png" alt="">
+							</a>
+					</div>
+					<div class="main__content-cards-card-price">
+						<p>Pixel 3</p>
+						<p>$399.00</p>
+					</div>
+					<div class="main__content-cards-card-discount">
+						<p>3 speed</p>
+						<p>$549.00</p>
+					</div>
+				</div>
+
+				<div class="main__content-cards-card">
+					<div class="main__content-cards-card-img">
+						<a href="#" >
+							<img class="main__content-cards-card-img-link" src="/images/png/bikes/brown-bike.png" alt="">
+							</a>
+					</div>
+					<div class="main__content-cards-card-price">
+						<p>Pixel 7</p>
+						<p>$399.00</p>
+					</div>
+					<div class="main__content-cards-card-discount">
+						<p>7 speed</p>
+						<p>$549.00</p>
+					</div>
+				</div>
+
+				<div class="main__content-cards-card">
+					<div class="main__content-cards-card-img">
+						<a href="#" >
+							<img class="main__content-cards-card-img-link" src="/images/png/bikes/blue-bike.png" alt="">
+							</a>
+					</div>
+					<div class="main__content-cards-card-price">
+						<p>Third ward</p>
+						<p>$499.00</p>
+					</div>
+					<div class="main__content-cards-card-discount">
+						<p>3 speed</p>
+						<p>$599.00</p>
+					</div>
+				</div>
+
+			</div>
+					
+		</section>
+		
+		<section class="main__tabs container">
+		<div class="tabs">
+        <div class="tabs__list">
+            <button class="tabs__btn active" onclick="city(event, 'pixel')">Pixel</button>
+            <button class="tabs__btn" onclick="city(event, 'step')">Pixel step thru</button>
+            <button class="tabs__btn" onclick="city(event, 'quiver')">Quiver arc</button>
+						<button class="tabs__btn" onclick="city(event, 'urbex')">Urbex</button>
+						<button class="tabs__btn" onclick="city(event, 'ward')">Third ward</button>
+						<button class="tabs__btn" onclick="city(event, 'comet')">Comet</button>
+        </div>
+        <div class="tabs__content" id="pixel">
+					<div class="tabs__content-title">
+						  <p>Fun, fast and affordable, the Pixel is a hassle free fixed gear/single speed bicycle designed and built by Fyxation for the everyday rider. The Pixel has an upright design that makes it ideal for sliding through traffic, commuting to work or simply cruising around campus.</p>
+            <a href="#">buy bikes</a>
+					</div>
+						<img src="/images/png/yellow-bike.png" alt="">
+        </div>
+				<div class="tabs__content" id="step">
+					<div class="tabs__content-title">
+						  <p>Fun, fast and affordable, the Pixel is a hassle free fixed gear/single speed bicycle designed and built by Fyxation for the everyday rider. The Pixel has an upright design that makes it ideal for sliding through traffic, commuting to work or simply cruising around campus.</p>
+            <a href="#">buy bikes</a>
+					</div>
+						<img src="/images/png/bgbike.png" alt="">
+        </div>
+				<div class="tabs__content" id="quiver">
+					<div class="tabs__content-title">
+						  <p>Fun, fast and affordable, the Pixel is a hassle free fixed gear/single speed bicycle designed and built by Fyxation for the everyday rider. The Pixel has an upright design that makes it ideal for sliding through traffic, commuting to work or simply cruising around campus.</p>
+            <a href="#">buy bikes</a>
+					</div>
+						<img src="/images/png/yellow-bike.png" alt="">
+        </div>
+				<div class="tabs__content" id="urbex">
+					<div class="tabs__content-title">
+						  <p>Fun, fast and affordable, the Pixel is a hassle free fixed gear/single speed bicycle designed and built by Fyxation for the everyday rider. The Pixel has an upright design that makes it ideal for sliding through traffic, commuting to work or simply cruising around campus.</p>
+            <a href="#">buy bikes</a>
+					</div>
+						<img src="/images/png/yellow-bike.png" alt="">
+        </div>
+				<div class="tabs__content" id="ward">
+					<div class="tabs__content-title">
+						  <p>Fun, fast and affordable, the Pixel is a hassle free fixed gear/single speed bicycle designed and built by Fyxation for the everyday rider. The Pixel has an upright design that makes it ideal for sliding through traffic, commuting to work or simply cruising around campus.</p>
+            <a href="#">buy bikes</a>
+					</div>
+						<img src="/images/png/yellow-bike.png" alt="">
+        </div>
+				<div class="tabs__content" id="comet">
+					<div class="tabs__content-title">
+						  <p>Fun, fast and affordable, the Pixel is a hassle free fixed gear/single speed bicycle designed and built by Fyxation for the everyday rider. The Pixel has an upright design that makes it ideal for sliding through traffic, commuting to work or simply cruising around campus.</p>
+            <a href="#">buy bikes</a>
+					</div>
+						<img src="/images/png/yellow-bike.png" alt="">
+        </div>
+			
+		</section>
+		<section class="main__player container">
+			<h2 class="main__player-title">Explore our lineup</h2>
+			<div class="player-container" data-src="https://www.	youtube.com/embed/yWHdkK5j4yk?si=znKwxxpy53PxvNbj?autoplay=1">
+				<img src="/images/png/bgbike.png" alt="">
+			</div>
+			<p>
+				From our roots, Fyxation has been guided by passion! A passion for exploring the city on two wheels, a passion for following the road without a destination in mind, a passion for cycling. Follow your passion. Live your fyxation!
+			</p>
+		</section>
+	</main>
+	<script src="/script/button.js"></script>
+	<script src="/script/script.js"></script>
+	<script src="/script/tabs.js"></script>
+	<script src="/script/video.js"></script>
+</body>
+</html>
